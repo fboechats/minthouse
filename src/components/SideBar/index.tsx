@@ -36,10 +36,10 @@ export function SideBar(): ReactElement {
   }
 
   return (
-    <div className="flex w-Sz21 flex-col items-center px-4 py-6 shadow-xs">
+    <div className="flex flex-col items-center px-4 py-6 shadow-xs">
       <div className="flex">
         <Logo variant="secondary" />
-        <div className="ml-3 flex flex-col">
+        <div className="ml-3 flex flex-col whitespace-nowrap">
           <p className="font-heading text-t5 font-semibold text-neutral-900">
             Publisher Name
           </p>

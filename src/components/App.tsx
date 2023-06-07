@@ -1,17 +1,8 @@
 import { RouterProvider, createBrowserRouter, redirect } from 'react-router-dom'
 import { Auth } from './pages/Auth/Auth'
 import { Dashboard } from './pages/Dashboard/Dashboard'
-import { useEffect } from 'react'
 
 function App() {
-  useEffect(() => {
-    const keepLoggedIn = localStorage.getItem('keepLoggedIn')
-
-    if (keepLoggedIn !== 'true') {
-      localStorage.removeItem('signed')
-    }
-  }, [])
-
   const router = createBrowserRouter([
     {
       path: '/',

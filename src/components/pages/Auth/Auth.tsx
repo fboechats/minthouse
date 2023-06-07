@@ -42,12 +42,14 @@ export function Auth() {
             onSubmit={handleSubmit}
           >
             <TextField
+              type="text"
               label="Email"
               placeholder="example.email@gmail.com"
               onChange={setEmail}
               errorMessage={errorMessage}
             />
             <TextField
+              type="password"
               label="Password"
               placeholder="Enter at least 8+ characters"
               onChange={setPassword}

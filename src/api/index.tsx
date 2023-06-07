@@ -17,6 +17,7 @@ export async function login(
   password: string,
   keepSigned: boolean
 ): Promise<RejectReturn | SuccessReturn> {
+  console.log(keepSigned)
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (!email || !password) {
@@ -60,4 +61,5 @@ export async function login(
 
 export function logout(): void {
   localStorage.removeItem('signed')
+  localStorage.removeItem('keepSignedIn')
 }
