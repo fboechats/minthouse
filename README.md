@@ -58,4 +58,4 @@ View and interact with your tests via UI.
 pnpm run test:ui
 ```
 
-Checkout the deployed version at: https://minthouse2-kr3h.vercel.app/dashboard
+Checkout the deployed version at: https://minthouse2-kr3h.vercel.app/
